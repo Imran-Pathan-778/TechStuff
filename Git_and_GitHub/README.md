@@ -42,7 +42,7 @@ Version control is a system that tracks and manages changes to files or a projec
   
 
 
-## Installation URL for Git and GitHub
+## Setup URL for Git and GitHub
 
  - [Git](https://git-scm.com/downloads)
  - [GitHub Sign in / Sign up](https://github.com/)
