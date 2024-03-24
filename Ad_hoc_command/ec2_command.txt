@@ -1,4 +1,4 @@
-# List all instances ID
+# List all instances ID:
 aws ec2 describe-instances --region us-east-1 --profile us --query 'Reservations[].Instances[].InstanceId' --output text   
 aws ec2 describe-instances --region us-east-1 --profile us --query 'Reservations[*].Instances[*].[InstanceId, InstanceType, InstanceLifecycle]'  --output text
 
