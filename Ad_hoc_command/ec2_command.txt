@@ -1,0 +1,9 @@
+# List all instances ID
+aws ec2 describe-instances --region us-east-1 --profile us --query 'Reservations[].Instances[].InstanceId' --output text   
+aws ec2 describe-instances --region us-east-1 --profile us --query 'Reservations[*].Instances[*].[InstanceId, InstanceType, InstanceLifecycle]'  --output text
+
+# Enable / Disable Termination Protection:
+aws ec2 modify-instance-attribute --instance-id i-9403d131fb949994 --disable-api-termination --region us-east-1 --profile us
+aws ec2 modify-instance-attribute --instance-id i-9483d131fb975575 --no-disable-api-termination --region us-east-1 --profile us
+
+
