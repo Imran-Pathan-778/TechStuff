@@ -1,7 +1,7 @@
 #!/bin/bash
 # MongoDB connection details
-ADMIN_USER="root"
-ADMIN_PASS="mKw2ATZGZM9M4JaQ"
+ADMIN_USER="abc"
+ADMIN_PASS="xyzxyz"
 DATABASE="admin"  
 
 # Function to create a new user
