@@ -6,4 +6,8 @@ aws ec2 describe-instances --region us-east-1 --profile us --query 'Reservations
 aws ec2 modify-instance-attribute --instance-id i-9403d131fb949994 --disable-api-termination --region us-east-1 --profile us
 aws ec2 modify-instance-attribute --instance-id i-9483d131fb975575 --no-disable-api-termination --region us-east-1 --profile us
 
-
+# List instanceID , Public and Private IP, Instance type in table format
+aws ec2 describe-instances --region ap-south-1 --profile IN \
+    --filters "Name=tag:Name,Values=abc-asg-New" \
+    --query 'Reservations[*].Instances[*].[InstanceId, PublicIpAddress, PrivateIpAddress, InstanceType]' \
+    --output table
